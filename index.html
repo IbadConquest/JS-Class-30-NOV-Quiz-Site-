@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Class 30 NOV Quiz</title>
+    <style>
+        .quiz-container {
+          font-family: Arial, sans-serif;
+          max-width: 600px;
+          margin: auto;
+          padding: 20px;
+          background-color: #f9f9f9;
+          border-radius: 8px;
+        }
+        .question {
+          margin-bottom: 10px;
+          font-size: 18px;
+        }
+        .options {
+          list-style-type: none;
+          padding: 0;
+        }
+        .options li {
+          margin: 8px 0  ;
+        }
+        .result {
+          font-size: 20px;
+          font-weight: bold;
+          margin-top: 20px;
+        }
+      </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Simple javaScript Quiz</h1>
+        <div id="quiz"></div>   
+        <button id="submit-btn">Submit Quiz</button>
+        <div class="result" id="result"></div>
+
+    </div>
+
+
+
+    <script>
+        const quizData = [
+    {
+        question:"What does the HTML Stand for?",   
+        question : [
+            "Hyper Text markup laguage",
+            "High thext markup language",
+            "high Text",
+            "None of the above"
+        ],
+        answer : 0 
+    },
+
+    {
+        question:"What is the capita of Germany ?",   
+        question : [
+            "japan",
+            "Madrid",
+            "Berlin",
+            "None of the above"
+            ],
+        answer : 3 
+    },
+
+    {
+        question:"What is the capita of Pakistan ?",   
+        question : [
+            "japan",
+            "Madrid",
+            "Islamabad",
+            "None of the above"
+            ],
+        answer : 3 
+    },
+];
+var currentQuestion = 0;
+var Score = 0 ;
+
+
+    function loadQuestion(){
+        if(currentQuestion < quizData.lenght){
+            var questionData = quizData[currentQuestion];
+            var quizElement = document.getElementById('quiz')
+            var optionHtml = "";
+
+
+
+
+
+
+        }
+    }
+    </script>
+</body>
+</html>
